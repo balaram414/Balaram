@@ -1,0 +1,65 @@
+<html>
+<head>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+    
+
+    div#tooltip {
+      position: absolute;        
+      display: inline-block;
+      padding: 10px;      
+      color: #000;     
+    }
+
+
+  </style>
+</head>
+<body>
+
+ <input type="button" value="rectangles" onClick="operate('rectangles')">
+   <p id="object_id"></p>
+
+    
+    <br>
+    
+ <div >Choose Color</div>
+     <select name="color" id="selectedColor">
+     <option value="gray">gray</option>
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="yellow">Yellow</option>  
+  
+</select>
+
+<select name="strokewidth" id="strokewidth">
+  <option value="15">15</option>
+  <option value="5">5</option>
+  <option value="10">10</option>
+  
+</select>
+
+<button id="goLeft"><</button>
+<button id="goRight">></button>
+<button id="goUp">Up</button>
+<button id="goDown">Down</button>
+<button id="get">GET Canvas1</button>
+
+    <canvas id="maincanvas"  width="1240" height="520" style="border:1px solid red;"></canvas>
+    
+
+   <div id="one"></div>
+
+<script>
+
+
+</script>
+
+
+
+
+</body>
+</html>
